@@ -14,6 +14,12 @@ ROUND_PICK_INDEX = 1
 OVERALL_PICK_INDEX = 3
 PLAYER_ID_INDEX = 0
 
+def format_player_line(line):
+    line = line.rstrip()
+    line = line.replace("\"", "")
+    line = line.replace("\'", "")
+    return line
+
 def get_manager(overall_pick, round_length):
     managers = list()
     for i in range(round_length):
@@ -37,6 +43,7 @@ def get_results(path_to_data, manager_count):
         if skip_first:
             skip_first = False
             continue
+        line = format_player_line(line)
         line_parts = line.split(DELIMITER)
         round_pick = int(line_parts[ROUND_PICK_INDEX])
         overall_pick = int(line_parts[OVERALL_PICK_INDEX]) - 1
@@ -53,3 +60,7 @@ class draft_results_reader:
     
     def get_results(self):
         return self._results
+    
+    def get_length(self):
+        name_to_use = list(self._results.keys())[0]
+        return len(self._results[name_to_use])

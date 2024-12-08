@@ -21,4 +21,10 @@ class draft_reader:
         return self._draft_order_reader.get_order()
     
     def get_schedules(self):
-        return self._draft_schedule_reader.get_schedules()
+        return self._draft_schedule_reader.get_schedules()  
+    
+    def get_results(self):
+        return self._draft_results_reader.get_results()
+    
+    def get_length(self):
+        return self._draft_results_reader.get_length()

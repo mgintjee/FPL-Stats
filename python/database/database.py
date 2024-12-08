@@ -32,6 +32,9 @@ class database:
     def get_schedules(self):
         return self._draft_reader.get_schedules()
     
+    def get_draft_results(self):
+        return self._draft_reader.get_results()
+    
     def get_manager_gw_scores(self, name):
         return self._manager_reader.get_manager_gw_scores(name)
     
@@ -40,6 +43,21 @@ class database:
         
     def get_manager_gw_scores(self, name):
         return self._manager_reader.get_manager_gw_scores(name)
+    
+    def get_draft_length(self):
+        return self._draft_reader.get_length()
+    
+    def get_draft_round_player_for(self, name, draft_round):
+        return self.get_draft_results()[name][draft_round]
+    
+    def get_player_data_for(self, name, player_id):
+        player_data = self.get_player_data(name)
+        for datum in player_data:
+            if datum.get_id() == player_id:
+                return datum
+    
+    def get_player_data(self, name):
+        return self._manager_reader.get_player_database(name).get_all_player_data()
     
     def get_opponent_gw_scores(self, name):
         opponent_scores = list()
