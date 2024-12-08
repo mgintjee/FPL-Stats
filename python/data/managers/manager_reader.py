@@ -34,5 +34,5 @@ class manager_reader:
     def get_manager_gw_scores(self, name):
         return self._manager_gw_readers[name].get_gw_scores()
     
-    def get_manager_roster_scores(self, name):
-        return self._manager_roster_readers[name].get_roster_scores()
+    def get_player_database(self, name):
+        return self._manager_roster_readers[name].get_player_database()
