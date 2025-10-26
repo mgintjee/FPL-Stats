@@ -11,6 +11,7 @@ import data_constants
 import manager_reader
 import draft_reader
 import stats_utils
+import database_utils
 import math
 
 class database:
@@ -38,11 +39,11 @@ class database:
     def get_manager_gw_scores(self, name):
         return self._manager_reader.get_manager_gw_scores(name)
     
-    def get_manager_roster_scores(self, name):
-        return self._manager_reader.get_manager_roster_scores(name)
-        
-    def get_manager_gw_scores(self, name):
-        return self._manager_reader.get_manager_gw_scores(name)
+    def get_manager_activity_reader(self, name):
+        return self._manager_reader.get_manager_activity_reader(name)
+    
+    def get_manager_player_database(self, name):
+        return self._manager_reader.get_player_database(name)
     
     def get_draft_length(self):
         return self._draft_reader.get_length()
@@ -51,79 +52,77 @@ class database:
         return self.get_draft_results()[name][draft_round]
     
     def get_player_data_for(self, name, player_id):
-        player_data = self.get_player_data(name)
-        for datum in player_data:
-            if datum.get_id() == player_id:
-                return datum
+        return database_utils.get_player_data_for(self, name, player_id)
     
     def get_player_data(self, name):
         return self._manager_reader.get_player_database(name).get_all_player_data()
     
     def get_opponent_gw_scores(self, name):
-        opponent_scores = list()
-        for gw in range(self.get_number_of_gws()):
-            opponent = self.get_opponent(name, gw)
-            opponent_scores.append(self.get_gw_score(opponent, gw))
-        return opponent_scores
+        return database_utils.get_opponent_gw_scores(self, name)
     
     def get_number_of_gws(self):
         return len(self._manager_reader.get_manager_gw_scores(self.get_managers()[0]))
     
-    def get_manager_z_score(self, name):
-        manager_scores = self.get_manager_gw_scores(name)
-        manager_z_scores = list()
-        for gw in range(len(manager_scores)):
-            gw_scores = self.get_gw_scores(gw)
-            manager_z_scores.append(stats_utils.get_z_score(manager_scores[gw], gw_scores))
-        return manager_z_scores
+    def get_gw_z_scores(self, gw):
+        return database_utils.get_gw_z_scores(self, gw)
     
-    def get_opponent_z_score(self, opponent):
-        opponent_scores = self.get_opponent_gw_scores(opponent)
-        opponent_z_scores = list()
-        for gw in range(len(opponent_scores)):
-            gw_scores = self.get_gw_scores(gw)
-            opponent_z_scores.append(stats_utils.get_z_score(opponent_scores[gw], gw_scores))
-        return opponent_z_scores
+    def get_manager_z_scores(self, name):
+        return database_utils.get_manager_z_scores(self, name)
+    
+    def get_manager_best_performing_loss_gws(self):
+        return database_utils.get_best_performing_loss_gws(self)
+    
+    def get_manager_worst_performing_win_gws(self):
+        return database_utils.get_worst_performing_win_gws(self)
+
+    def get_best_performing_loss_gws(database):
+        return database_utils.get_best_performing_loss_gws(database)
+
+    def get_worst_performing_win_gws(database):
+        return database_utils.get_worst_performing_win_gws(database)
+
+    def get_best_performing_win_gws(database):
+        return database_utils.get_best_performing_win_gws(database)
+
+    def get_worst_performing_loss_gws(database):
+        return database_utils.get_worst_performing_loss_gws(database)
+    
+    def get_opponent_z_scores(self, opponent):
+        return database_utils.get_opponent_z_scores(self, opponent)
     
     def get_manager_avg_z_score(self, name):
-        return stats_utils.get_mean(self.get_manager_z_score(name))
+        return stats_utils.get_mean(self.get_manager_z_scores(name))
     
     def get_opponent_avg_z_score(self, opponent):
-        return stats_utils.get_mean(self.get_opponent_z_score(opponent))
+        return stats_utils.get_mean(self.get_opponent_z_scores(opponent))
     
     def get_gw_score(self, name, gw):
         return self.get_manager_gw_scores(name)[gw]
     
     def get_opponent(self, name, gw):
-        manager_index = self.get_managers().index(name)
-        schedule = self.get_schedules()[manager_index]
-        if(gw >= len(schedule)):
-            gw = gw % len(schedule)
-        opponent_index = schedule[gw]
-        return self.get_managers()[opponent_index]
+        return database_utils.get_opponent(self, name, gw)
     
     def get_opponent_gws(self, name, opponent):
-        gws = list()
-        manager_index = self.get_managers().index(name)
-        opponent_index = self.get_managers().index(opponent)
-        schedule = self.get_schedules()[manager_index]
-        gw_step = schedule.index(opponent_index)
-        max_head_to_heads = math.ceil(self.get_number_of_gws() / (len(self.get_managers()) - 1))
-        for i in range(max_head_to_heads):
-            gw = gw_step + (i * (len(self.get_managers()) - 1))
-            if(gw > self.get_number_of_gws() - 1):
-                break
-            gws.append(gw)
-        return gws
+        return database_utils.get_opponent_gws(self, name, opponent)
     
     def get_gw_scores(self, gw):
-        gw_data = list()
-        for name in self.get_managers():
-            gw_data.append(self.get_gw_score(name, gw))
-        return gw_data
+        return database_utils.get_gw_scores(self, gw)
         
     def get_z_score(self, manager, gw):
-        gw_data = self.get_gw_scores(gw)
-        score = self.get_gw_score(manager, gw)
-        return stats_utils.get_z_score(score, gw_data)
+        return database_utils.get_z_score(self, manager, gw)
     
+    def get_player_id_map(self):
+        player_id_data_map = dict()
+        for manager in self.get_managers():
+            player_db = self.get_manager_player_database(manager)
+            for player_data in player_db.get_all_player_data():
+                player_id = player_data.get_id()
+                if(player_id not in player_id_data_map.keys()):
+                    player_id_data_map[player_id] = list()
+                player_id_data_map[player_id].append(player_data)
+        return player_id_data_map
+    
+    def was_player_id_drafted(self, manager, player_id):
+        manager_index = self.get_managers().index(manager)
+        return player_id in self.get_draft_results()[manager_index]
+        

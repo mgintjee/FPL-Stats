@@ -3,6 +3,7 @@ ID_INDEX = 0
 POSITION_INDEX = 1
 NAME_INDEX = 2
 TEAM_INDEX = 3
+STATUS_INDEX = 5
 POINTS_INDEX = 7
 POINTS_PER_GAME_INDEX = 8
 GAMES_PLAYED_INDEX = 9
@@ -32,6 +33,7 @@ class player_data:
         self._position = data_parts[POSITION_INDEX]
         self._name = data_parts[NAME_INDEX]
         self._team = data_parts[TEAM_INDEX]
+        self._status = data_parts[STATUS_INDEX]
         self._points = float(data_parts[POINTS_INDEX])
         self._ppg = float(data_parts[POINTS_PER_GAME_INDEX])
         self._games = int(data_parts[GAMES_PLAYED_INDEX])
@@ -57,6 +59,9 @@ class player_data:
     
     def get_id(self):
         return self._id;
+    
+    def is_free_agent(self):
+        return self._status == "-"
         
     def get_position(self):
         return self._position;

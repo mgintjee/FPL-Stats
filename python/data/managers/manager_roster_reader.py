@@ -45,8 +45,8 @@ def get_player_database(path_to_data):
     return player_db
 
 class manager_roster_reader:
-    def __init__(self, path):
-        path_to_data = path + "\\" +\
+    def __init__(self, path, name):
+        path_to_data = path + "\\" + name + "\\" +\
             manager_constants.ROSTER_SCORES
         self._player_database = get_player_database(path_to_data)
         

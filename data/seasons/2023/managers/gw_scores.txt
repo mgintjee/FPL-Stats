@@ -1,0 +1,256 @@
+
+Skip to main content
+Standings
+2023-24 EPLFake Internet Soccer XIII
+Gameweek 1
+(Fri Aug 11, 2023 - Thu Aug 17, 2023)
+vu 	87.5 	tj 	123.5
+mg 	194.5 	aj 	168
+sean 	131.5 	ben 	87.75
+rafa 	128 	katabe 	125.75
+zach 	159 	md 	163.75
+Gameweek 2
+(Fri Aug 18, 2023 - Thu Aug 24, 2023)
+tj 	176.75 	mg 	129.25
+vu 	101.5 	sean 	127
+aj 	115 	rafa 	113.25
+ben 	128.5 	zach 	105.25
+katabe 	113.25 	md 	158.25
+Gameweek 3
+(Fri Aug 25, 2023 - Thu Aug 31, 2023)
+sean 	157.25 	tj 	115.75
+rafa 	179.25 	mg 	124.5
+zach 	142.25 	vu 	142.5
+md 	129 	aj 	156.5
+katabe 	132.5 	ben 	148.75
+Gameweek 4
+(Fri Sep 1, 2023 - Thu Sep 14, 2023)
+tj 	192 	rafa 	109.25
+sean 	149.5 	zach 	114.75
+mg 	113 	md 	152.5
+vu 	133.5 	katabe 	122
+aj 	159 	ben 	123
+Gameweek 5
+(Fri Sep 15, 2023 - Thu Sep 21, 2023)
+zach 	116.25 	tj 	122.5
+md 	112.25 	rafa 	123.25
+katabe 	98.75 	sean 	176
+ben 	85.75 	mg 	109.5
+aj 	136 	vu 	107
+Gameweek 6
+(Fri Sep 22, 2023 - Thu Sep 28, 2023)
+tj 	185.75 	md 	216
+zach 	123 	katabe 	118.75
+rafa 	133.75 	ben 	111.25
+sean 	133.5 	aj 	124.25
+mg 	154.75 	vu 	88.5
+Gameweek 7
+(Fri Sep 29, 2023 - Thu Oct 5, 2023)
+katabe 	155.75 	tj 	185.5
+ben 	130 	md 	164.5
+aj 	105.25 	zach 	116
+vu 	186 	rafa 	104.75
+mg 	219.5 	sean 	155.75
+Gameweek 8
+(Fri Oct 6, 2023 - Thu Oct 19, 2023)
+tj 	159.5 	ben 	124.75
+katabe 	129.75 	aj 	100.25
+md 	88 	vu 	114.5
+zach 	146.75 	mg 	105.25
+rafa 	129 	sean 	164.25
+Gameweek 9
+(Fri Oct 20, 2023 - Thu Oct 26, 2023)
+aj 	144.75 	tj 	152.25
+vu 	110.75 	ben 	68.25
+mg 	175.75 	katabe 	131
+sean 	148 	md 	110.5
+rafa 	99.5 	zach 	127.5
+Gameweek 10
+(Fri Oct 27, 2023 - Thu Nov 2, 2023)
+tj 	165.25 	vu 	108.25
+aj 	137 	mg 	135
+ben 	145.75 	sean 	135.75
+katabe 	122.5 	rafa 	124.25
+md 	140 	zach 	151
+Gameweek 11
+(Fri Nov 3, 2023 - Thu Nov 9, 2023)
+mg 	144 	tj 	142
+sean 	96.5 	vu 	131.25
+rafa 	156.5 	aj 	93
+zach 	101 	ben 	82.75
+md 	77 	katabe 	140
+Gameweek 12
+(Fri Nov 10, 2023 - Thu Nov 23, 2023)
+tj 	103.75 	sean 	122.25
+mg 	213.5 	rafa 	140.75
+vu 	162.25 	zach 	166.75
+aj 	96 	md 	97.75
+ben 	98.75 	katabe 	134
+Gameweek 13
+(Fri Nov 24, 2023 - Thu Nov 30, 2023)
+rafa 	132 	tj 	170.75
+zach 	181.5 	sean 	141.5
+md 	100.5 	mg 	100
+katabe 	116.25 	vu 	99.75
+ben 	115 	aj 	132
+Gameweek 14
+(Fri Dec 1, 2023 - Mon Dec 4, 2023)
+tj 	170.25 	zach 	135.25
+rafa 	146 	md 	127
+sean 	143 	katabe 	113.75
+mg 	135.25 	ben 	98.5
+vu 	164.25 	aj 	113.75
+Gameweek 15
+(Tue Dec 5, 2023 - Thu Dec 7, 2023)
+md 	152.25 	tj 	141
+katabe 	143.5 	zach 	80.25
+ben 	145.75 	rafa 	145.25
+aj 	135 	sean 	109.25
+vu 	149.25 	mg 	199.75
+Gameweek 16
+(Fri Dec 8, 2023 - Thu Dec 14, 2023)
+tj 	137.5 	katabe 	95.75
+md 	88.25 	ben 	123.5
+zach 	121.25 	aj 	122.25
+rafa 	146.25 	vu 	132.25
+sean 	127.25 	mg 	157.5
+Gameweek 17
+(Fri Dec 15, 2023 - Wed Dec 20, 2023)
+ben 	143 	tj 	158
+aj 	90 	katabe 	106.5
+vu 	147.75 	md 	129.25
+mg 	162 	zach 	105
+sean 	141.5 	rafa 	217.5
+Gameweek 18
+(Thu Dec 21, 2023 - Mon Dec 25, 2023)
+tj 	187.25 	aj 	124.25
+ben 	127.25 	vu 	101.5
+katabe 	93.25 	mg 	134.75
+md 	59.5 	sean 	122
+zach 	79.25 	rafa 	115.5
+Gameweek 19
+(Tue Dec 26, 2023 - Thu Dec 28, 2023)
+vu 	153 	tj 	150.25
+mg 	158.25 	aj 	134.75
+sean 	104.75 	ben 	119.5
+rafa 	143 	katabe 	72
+zach 	111.25 	md 	81.75
+Gameweek 20
+(Fri Dec 29, 2023 - Thu Jan 11, 2024)
+tj 	149.75 	mg 	113.5
+vu 	137.75 	sean 	149.75
+aj 	181.75 	rafa 	125
+ben 	113.25 	zach 	123.5
+katabe 	130.5 	md 	126.25
+Gameweek 21
+(Fri Jan 12, 2024 - Mon Jan 29, 2024)
+sean 	168.25 	tj 	136.25
+rafa 	156.75 	mg 	139.75
+zach 	141 	vu 	178.75
+md 	145.5 	aj 	172.75
+katabe 	130.25 	ben 	128.25
+Gameweek 22
+(Tue Jan 30, 2024 - Thu Feb 1, 2024)
+tj 	178 	rafa 	118.25
+sean 	145.75 	zach 	112.25
+mg 	152.25 	md 	154.75
+vu 	136.75 	katabe 	100
+aj 	157.75 	ben 	156.25
+Gameweek 23
+(Fri Feb 2, 2024 - Thu Feb 8, 2024)
+zach 	160.75 	tj 	148.25
+md 	155.75 	rafa 	109
+katabe 	141.25 	sean 	112.5
+ben 	121.5 	mg 	117.25
+aj 	162 	vu 	146.25
+Gameweek 24
+(Fri Feb 9, 2024 - Thu Feb 15, 2024)
+tj 	147.75 	md 	156.25
+zach 	123.75 	katabe 	105.75
+rafa 	156 	ben 	138
+sean 	118.75 	aj 	142
+mg 	205.75 	vu 	166
+Gameweek 25
+(Fri Feb 16, 2024 - Thu Feb 22, 2024)
+katabe 	157.75 	tj 	122.5
+ben 	113.75 	md 	170
+aj 	183.25 	zach 	218.75
+vu 	194.25 	rafa 	187.75
+mg 	215 	sean 	238.5
+Gameweek 26
+(Fri Feb 23, 2024 - Thu Feb 29, 2024)
+tj 	127.5 	ben 	74.75
+katabe 	148 	aj 	152.25
+md 	90.25 	vu 	119.25
+zach 	110.75 	mg 	128.75
+rafa 	210.25 	sean 	93.5
+Gameweek 27
+(Fri Mar 1, 2024 - Thu Mar 7, 2024)
+aj 	169.5 	tj 	129.25
+vu 	169 	ben 	113.5
+mg 	165.75 	katabe 	162
+sean 	122.75 	md 	146.75
+rafa 	197.25 	zach 	148
+Gameweek 28
+(Fri Mar 8, 2024 - Thu Mar 14, 2024)
+tj 	190 	vu 	218.5
+aj 	129.5 	mg 	224.5
+ben 	152.25 	sean 	124
+katabe 	141.75 	rafa 	116.75
+md 	136.75 	zach 	102.75
+Gameweek 29
+(Fri Mar 15, 2024 - Thu Mar 28, 2024)
+mg 	29.5 	tj 	76.5
+sean 	93.75 	vu 	130.5
+rafa 	42.75 	aj 	103.25
+zach 	62 	ben 	40.25
+md 	46.75 	katabe 	96
+Gameweek 30
+(Fri Mar 29, 2024 - Mon Apr 1, 2024)
+tj 	172 	sean 	131.25
+mg 	126.75 	rafa 	141.25
+vu 	183.25 	zach 	152.25
+aj 	99.75 	md 	113.5
+ben 	96.25 	katabe 	103.5
+Gameweek 31
+(Tue Apr 2, 2024 - Thu Apr 4, 2024)
+rafa 	125.75 	tj 	125.25
+zach 	139 	sean 	124
+md 	110 	mg 	145
+katabe 	127.25 	vu 	173.75
+ben 	103.25 	aj 	98.75
+Gameweek 32
+(Fri Apr 5, 2024 - Thu Apr 11, 2024)
+tj 	90 	zach 	100.25
+rafa 	151.5 	md 	130.75
+sean 	139.5 	katabe 	122.5
+mg 	117 	ben 	128
+vu 	122 	aj 	154.75
+Gameweek 33
+(Fri Apr 12, 2024 - Thu Apr 18, 2024)
+md 	134.5 	tj 	164.5
+katabe 	128.5 	zach 	99
+ben 	80.25 	rafa 	153.75
+aj 	147.25 	sean 	147.25
+vu 	172.25 	mg 	161.5
+Gameweek 34
+(Fri Apr 19, 2024 - Thu Apr 25, 2024)
+tj 	249.75 	katabe 	175.5
+md 	166 	ben 	205.25
+zach 	190.75 	aj 	104.75
+rafa 	226.25 	vu 	281
+sean 	195.75 	mg 	329
+Gameweek 35
+(Fri Apr 26, 2024 - Thu May 2, 2024)
+ben 	135 	tj 	166.75
+aj 	106 	katabe 	139.5
+vu 	242.5 	md 	146
+mg 	147 	zach 	83
+sean 	149.75 	rafa 	174
+Gameweek 36
+(Fri May 3, 2024 - Thu May 9, 2024)
+tj 	160.75 	aj 	100.25
+ben 	167.5 	vu 	248.75
+katabe 	152.5 	mg 	178.25
+md 	126.25 	sean 	163
+zach 	163 	rafa 	160.25

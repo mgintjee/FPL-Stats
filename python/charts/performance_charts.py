@@ -67,17 +67,20 @@ def plot_head_to_heads(database):
     print(pretty_table)
                 
 def plot_manager_performances(database):
-    headers = [database.get_season(), "Avg Z-Score"]
+    headers = [database.get_season(), "Avg Z-Score", "Avg Opp. Z-Score"]
     pretty_table = PrettyTable(headers);
     
     avg_z_scores = dict()
+    avg_opp_z_scores = dict()
     
     for name in database.get_managers():
         avg_z_scores[name] = database.get_manager_avg_z_score(name)
+        avg_opp_z_scores[name] = database.get_opponent_avg_z_score(name)
 
     for name in sorted(database.get_managers(), reverse = True, key = lambda ele: avg_z_scores[ele]):
         row_data = [name]
         row_data.append(chart_utils.get_color_for_avg_z_score(avg_z_scores[name], False))
+        row_data.append(chart_utils.get_color_for_avg_z_score(avg_opp_z_scores[name], True))
         pretty_table.add_row(row_data)
         
     print(pretty_table)
@@ -97,3 +100,33 @@ def plot_opponent_performances(database):
         pretty_table.add_row(row_data)
 
     print(pretty_table)
+    
+def plot_manager_performances_gw(database, best_performance, won_gw):
+    headers = [database.get_season(), "GW", "GW Score", "Z-Score","Opp.", "Opp. GW Score", "Opp. Z-Score"]
+    pretty_table = PrettyTable(headers);
+        
+    manager_gws_to_report = dict()
+    if(best_performance):
+        if(won_gw):
+            manager_gws_to_report = database.get_best_performing_win_gws()
+        else:
+            manager_gws_to_report = database.get_best_performing_loss_gws()
+    else:
+        if(won_gw):
+            manager_gws_to_report = database.get_worst_performing_win_gws()
+        else:
+            manager_gws_to_report = database.get_worst_performing_loss_gws()
+            
+    data_to_chart = dict()
+    for manager in database.get_managers():
+        gw = manager_gws_to_report[manager]
+        opponent = database.get_opponent(manager, gw)
+        data_to_chart[manager] = [manager, gw + 1, database.get_gw_score(manager, gw), round(database.get_z_score(manager, gw), 2), \
+                                  opponent, database.get_gw_score(opponent, gw), round(database.get_z_score(opponent, gw), 2)]
+
+    for manager in sorted(database.get_managers()):
+        row_data = data_to_chart[manager]
+        pretty_table.add_row(row_data)
+
+    print(pretty_table)
+    

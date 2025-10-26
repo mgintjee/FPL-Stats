@@ -29,7 +29,7 @@ class manager_gw_scores_reader:
             data_constants.MANAGERS + "\\" +\
             manager + "\\" +\
             manager_constants.GW_SCORES
-        print(self.path_to_data
+        print(self.path_to_data)
     
     def get_data(self):
         return self.season_data

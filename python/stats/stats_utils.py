@@ -25,6 +25,8 @@ def get_std(data):
     return round(np.std(data), 2)
 
 def get_z_score(datum, data):
+    if(datum == 0):
+        return 0
     mean = get_mean(data)
     std = get_std(data)
     diff = datum - mean

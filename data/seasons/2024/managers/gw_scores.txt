@@ -1,0 +1,256 @@
+
+Skip to main content
+Standings
+2024-25 EPLFake Internet Soccer XIV
+Gameweek 1
+(Fri Aug 16, 2024 - Fri Aug 23, 2024)
+matt 	140 	katabe 	156
+aj 	81 	ben 	128.5
+tj 	137 	vu 	131
+morfin 	171 	sean 	168.5
+rafa 	146 	zac 	101.5
+Gameweek 2
+(Sat Aug 24, 2024 - Fri Aug 30, 2024)
+katabe 	189.5 	aj 	153.5
+matt 	170.5 	tj 	166.5
+ben 	66.5 	morfin 	123.5
+vu 	193.5 	rafa 	115
+sean 	152.5 	zac 	180.5
+Gameweek 3
+(Sat Aug 31, 2024 - Fri Sep 13, 2024)
+tj 	111.5 	katabe 	121
+morfin 	88.5 	aj 	118.5
+rafa 	125 	matt 	106.5
+zac 	139.5 	ben 	121.5
+sean 	142 	vu 	150
+Gameweek 4
+(Sat Sep 14, 2024 - Fri Sep 20, 2024)
+katabe 	156.5 	morfin 	170
+tj 	160.5 	rafa 	163.5
+aj 	105 	zac 	157.5
+matt 	97 	sean 	126.5
+ben 	144.5 	vu 	135.5
+Gameweek 5
+(Sat Sep 21, 2024 - Fri Sep 27, 2024)
+rafa 	175.5 	katabe 	133
+zac 	172.5 	morfin 	142.5
+sean 	128 	tj 	146.5
+vu 	163.5 	aj 	150.5
+ben 	155 	matt 	147
+Gameweek 6
+(Sat Sep 28, 2024 - Fri Oct 4, 2024)
+katabe 	124.5 	zac 	128
+rafa 	140.5 	sean 	129
+morfin 	115 	vu 	162
+tj 	141.5 	ben 	101.5
+aj 	192.5 	matt 	135
+Gameweek 7
+(Sat Oct 5, 2024 - Fri Oct 18, 2024)
+sean 	150.5 	katabe 	161
+vu 	172 	zac 	153
+ben 	97 	rafa 	170
+matt 	103 	morfin 	188
+aj 	93.5 	tj 	184
+Gameweek 8
+(Sat Oct 19, 2024 - Thu Oct 24, 2024)
+katabe 	131.5 	vu 	157.5
+sean 	95 	ben 	141
+zac 	112 	matt 	176.5
+rafa 	114 	aj 	136
+morfin 	105.5 	tj 	140
+Gameweek 9
+(Fri Oct 25, 2024 - Fri Nov 1, 2024)
+ben 	140 	katabe 	143
+matt 	175 	vu 	179.5
+aj 	90 	sean 	110.5
+tj 	135.5 	zac 	102
+morfin 	121 	rafa 	141.5
+Gameweek 10
+(Sat Nov 2, 2024 - Fri Nov 8, 2024)
+katabe 	132.5 	matt 	150
+ben 	150.5 	aj 	190.5
+vu 	138.5 	tj 	146
+sean 	118.5 	morfin 	117
+zac 	151 	rafa 	90.5
+Gameweek 11
+(Sat Nov 9, 2024 - Fri Nov 22, 2024)
+aj 	126.5 	katabe 	125
+tj 	137 	matt 	139
+morfin 	100 	ben 	190.5
+rafa 	146 	vu 	136.5
+zac 	176 	sean 	145
+Gameweek 12
+(Sat Nov 23, 2024 - Thu Nov 28, 2024)
+katabe 	125 	tj 	157
+aj 	154.5 	morfin 	128.5
+matt 	138.5 	rafa 	164.5
+ben 	80 	zac 	152.5
+vu 	136 	sean 	131.5
+Gameweek 13
+(Fri Nov 29, 2024 - Mon Dec 2, 2024)
+morfin 	125 	katabe 	131
+rafa 	144.5 	tj 	184
+zac 	102 	aj 	104
+sean 	188.5 	matt 	107
+vu 	111.5 	ben 	165.5
+Gameweek 14
+(Tue Dec 3, 2024 - Fri Dec 6, 2024)
+katabe 	166 	rafa 	199
+morfin 	77 	zac 	181
+tj 	116.5 	sean 	162
+aj 	116 	vu 	223
+matt 	151 	ben 	166.5
+Gameweek 15
+(Sat Dec 7, 2024 - Fri Dec 13, 2024)
+zac 	110 	katabe 	149.5
+sean 	102.5 	rafa 	100
+vu 	150.5 	morfin 	68.5
+ben 	115.5 	tj 	147
+matt 	128.5 	aj 	133.5
+Gameweek 16
+(Sat Dec 14, 2024 - Fri Dec 20, 2024)
+katabe 	154 	sean 	89.5
+zac 	141 	vu 	174.5
+rafa 	169.5 	ben 	153
+morfin 	103 	matt 	150.5
+tj 	132 	aj 	159.5
+Gameweek 17
+(Sat Dec 21, 2024 - Wed Dec 25, 2024)
+vu 	179 	katabe 	129
+ben 	197.5 	sean 	158.5
+matt 	180 	zac 	191.5
+aj 	139 	rafa 	126.5
+tj 	187 	morfin 	112.5
+Gameweek 18
+(Thu Dec 26, 2024 - Sat Dec 28, 2024)
+katabe 	152.5 	ben 	130.5
+vu 	141.5 	matt 	134.5
+sean 	131 	aj 	131.5
+zac 	132 	tj 	179
+rafa 	164 	morfin 	122.5
+Gameweek 19
+(Sun Dec 29, 2024 - Fri Jan 3, 2025)
+matt 	153 	katabe 	104.5
+aj 	96 	ben 	164.5
+tj 	173 	vu 	123
+morfin 	151 	sean 	154.5
+rafa 	136 	zac 	124.5
+Gameweek 20
+(Sat Jan 4, 2025 - Mon Jan 13, 2025)
+katabe 	132 	aj 	100.5
+matt 	146 	tj 	175.5
+ben 	195 	morfin 	142
+vu 	166.5 	rafa 	79.5
+sean 	149.5 	zac 	167.5
+Gameweek 21
+(Tue Jan 14, 2025 - Fri Jan 17, 2025)
+tj 	154 	katabe 	132.5
+morfin 	158.5 	aj 	177
+rafa 	160 	matt 	163
+zac 	137.5 	ben 	149.5
+sean 	143 	vu 	185.5
+Gameweek 22
+(Sat Jan 18, 2025 - Fri Jan 24, 2025)
+katabe 	152 	morfin 	134
+tj 	159.5 	rafa 	132
+aj 	162.5 	zac 	129.5
+matt 	172.5 	sean 	144.5
+ben 	126 	vu 	193.5
+Gameweek 23
+(Sat Jan 25, 2025 - Fri Jan 31, 2025)
+rafa 	145 	katabe 	159.5
+zac 	163.5 	morfin 	123.5
+sean 	136 	tj 	158.5
+vu 	174.5 	aj 	126.5
+ben 	155 	matt 	161
+Gameweek 24
+(Sat Feb 1, 2025 - Thu Feb 13, 2025)
+katabe 	135 	zac 	174.5
+rafa 	94.5 	sean 	218.5
+morfin 	206.5 	vu 	187
+tj 	248.5 	ben 	128.5
+aj 	138 	matt 	163.5
+Gameweek 25
+(Fri Feb 14, 2025 - Thu Feb 20, 2025)
+sean 	165 	katabe 	150
+vu 	125.5 	zac 	186
+ben 	111 	rafa 	154
+matt 	128.5 	morfin 	136
+aj 	141 	tj 	211
+Gameweek 26
+(Fri Feb 21, 2025 - Mon Feb 24, 2025)
+katabe 	109.5 	vu 	184
+sean 	182.5 	ben 	151
+zac 	160 	matt 	88
+rafa 	121.5 	aj 	169.5
+morfin 	115.5 	tj 	142.5
+Gameweek 27
+(Tue Feb 25, 2025 - Fri Mar 7, 2025)
+ben 	128 	katabe 	206
+matt 	156.5 	vu 	139
+aj 	101.5 	sean 	140.5
+tj 	157.5 	zac 	165
+morfin 	116 	rafa 	123
+Gameweek 28
+(Sat Mar 8, 2025 - Fri Mar 14, 2025)
+katabe 	162 	matt 	106
+ben 	137.5 	aj 	132.5
+vu 	157.5 	tj 	155.5
+sean 	181.5 	morfin 	153.5
+zac 	143 	rafa 	140.5
+Gameweek 29
+(Sat Mar 15, 2025 - Mon Mar 31, 2025)
+aj 	108.5 	katabe 	156
+tj 	181.5 	matt 	147.5
+morfin 	75.5 	ben 	136.5
+rafa 	136.5 	vu 	122
+zac 	166.5 	sean 	127.5
+Gameweek 30
+(Tue Apr 1, 2025 - Fri Apr 4, 2025)
+katabe 	157 	tj 	108.5
+aj 	139.5 	morfin 	118
+matt 	122.5 	rafa 	78
+ben 	171 	zac 	152.5
+vu 	150.5 	sean 	122.5
+Gameweek 31
+(Sat Apr 5, 2025 - Fri Apr 11, 2025)
+morfin 	107 	katabe 	91.5
+rafa 	144.5 	tj 	121.5
+zac 	146.5 	aj 	111
+sean 	89.5 	matt 	157.5
+vu 	184.5 	ben 	128.5
+Gameweek 32
+(Sat Apr 12, 2025 - Fri Apr 18, 2025)
+katabe 	127 	rafa 	155.5
+morfin 	157.5 	zac 	146
+tj 	198.5 	sean 	128
+aj 	73 	vu 	208.5
+matt 	244.5 	ben 	156.5
+Gameweek 33
+(Sat Apr 19, 2025 - Fri Apr 25, 2025)
+zac 	139 	katabe 	154
+sean 	162 	rafa 	177.5
+vu 	254.5 	morfin 	160
+ben 	126 	tj 	198.5
+matt 	162.5 	aj 	138.5
+Gameweek 34
+(Sat Apr 26, 2025 - Thu May 1, 2025)
+katabe 	150.5 	sean 	138
+zac 	183 	vu 	142
+rafa 	142 	ben 	149
+morfin 	109 	matt 	200
+tj 	191 	aj 	103
+Gameweek 35
+(Fri May 2, 2025 - Fri May 9, 2025)
+vu 	125 	katabe 	85.5
+ben 	138 	sean 	142
+matt 	111 	zac 	113
+aj 	144 	rafa 	137.5
+tj 	126 	morfin 	109.5
+Gameweek 36
+(Sat May 10, 2025 - Wed May 14, 2025)
+katabe 	100 	ben 	126.5
+vu 	188.5 	matt 	158
+sean 	97.5 	aj 	114.5
+zac 	122.5 	tj 	159
+rafa 	185 	morfin 	166.5

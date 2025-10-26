@@ -8,11 +8,13 @@ import data_constants
 import manager_constants
 import manager_gw_reader
 import manager_roster_reader
+import manager_activity_reader
 
 def get_managers(path_to_data):
     managers = list()
     for file in os.listdir(path_to_data):
-        managers.append(file)
+        if('.' not in file and file != "transactions"):
+            managers.append(file)
     return managers
         
 class manager_reader:
@@ -22,11 +24,12 @@ class manager_reader:
         self._managers = get_managers(path_to_data)
         self._manager_gw_readers = dict()
         self._manager_roster_readers = dict()
+        self._manager_activity_readers = dict()
         
         for name in self._managers:
-            path_to_manager_data = path_to_data + "\\" + name
-            self._manager_gw_readers[name] = manager_gw_reader.manager_gw_reader(path_to_manager_data)
-            self._manager_roster_readers[name] = manager_roster_reader.manager_roster_reader(path_to_manager_data)
+            self._manager_roster_readers[name] = manager_roster_reader.manager_roster_reader(path_to_data, name)
+            self._manager_gw_readers[name] = manager_gw_reader.manager_gw_reader(path_to_data, name)
+            self._manager_activity_readers[name] = manager_activity_reader.manager_activity_reader(path_to_data, name)
             
     def get_managers(self):
         return self._managers
@@ -36,3 +39,6 @@ class manager_reader:
     
     def get_player_database(self, name):
         return self._manager_roster_readers[name].get_player_database()
+    
+    def get_manager_activity_reader(self, name):
+        return self._manager_activity_readers[name]
