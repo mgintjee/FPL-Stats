@@ -16,7 +16,8 @@ def get_gw_scores(path_to_data, name):
             else:
                 line_part = line_parts[3]
             value = round(float(line_part.rstrip()), 2)
-            gw_scores.append(value)
+            if(value > 0): 
+                gw_scores.append(value)
     return gw_scores
     
         
