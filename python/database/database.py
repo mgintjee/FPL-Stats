@@ -77,7 +77,7 @@ class database:
 
     def get_best_performing_loss_gws(database):
         return database_utils.get_best_performing_loss_gws(database)
-
+    
     def get_worst_performing_win_gws(database):
         return database_utils.get_worst_performing_win_gws(database)
 
@@ -102,6 +102,9 @@ class database:
     def get_opponent(self, name, gw):
         return database_utils.get_opponent(self, name, gw)
     
+    def get_opponent_score(self, name, gw):
+        return self.get_manager_gw_scores(database_utils.get_opponent(self, name, gw))[gw]
+    
     def get_opponent_gws(self, name, opponent):
         return database_utils.get_opponent_gws(self, name, opponent)
     
@@ -125,4 +128,7 @@ class database:
     def was_player_id_drafted(self, manager, player_id):
         manager_index = self.get_managers().index(manager)
         return player_id in self.get_draft_results()[manager_index]
+    
+    def get_manager_ranks_for_gw(database, gw):
         
+        return list()
