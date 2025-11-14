@@ -68,6 +68,7 @@ def display_manager_z_scores(db):
     if(DEBUG): print(data_to_display)
         
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
+    df = df.T
     
     display(df.style \
            .set_caption(db.get_season() + " Manager Z-Scores") \
@@ -80,6 +81,7 @@ def display_manager_gw_scores(db):
     if(DEBUG): print(data_to_display)
         
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
+    df = df.T
     
     display(df.style \
            .set_caption(db.get_season() + " Manager Scores") \
@@ -92,6 +94,7 @@ def display_opponent_z_scores(db):
     if(DEBUG): print(data_to_display)
         
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
+    df = df.T
 
     display(df.style \
            .set_caption(db.get_season() + " Opponent Z-Scores") \
@@ -104,6 +107,7 @@ def display_opponent_gw_scores(db):
     if(DEBUG): print(data_to_display)
         
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
+    df = df.T
     
     display(df.style \
            .set_caption(db.get_season() + " Opponent Scores") \
