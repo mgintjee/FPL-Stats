@@ -47,6 +47,8 @@ def display_race_to_the_bottom(db):
 def display_head_to_heads(db):
     data_to_display = database_formatter.format_head_to_heads(db)
     if(DEBUG): print(data_to_display)
+        
+    print(db.get_season() + ' Head to Heads')
     
     max_possible_wins = db.get_number_of_gws() / len(db.get_managers())
     new_labels = list()
@@ -57,7 +59,6 @@ def display_head_to_heads(db):
     df = pd.DataFrame(data = data_to_display, index = db.get_managers())
     
     display(df.style \
-           .set_caption(db.get_season() + " Head to Heads") \
            .format(precision = 0) \
            .background_gradient(axis = None, vmin = 0, vmax = max_possible_wins, cmap = COLOR_MAP) \
            .text_gradient(axis = None, vmin = -1, vmax = -1, cmap = "hot") \
@@ -67,11 +68,12 @@ def display_manager_z_scores(db):
     data_to_display = database_formatter.format_manager_z_scores(db)
     if(DEBUG): print(data_to_display)
         
+    print(db.get_season() + ' Manager Z-Scores')
+        
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
     df = df.T
     
     display(df.style \
-           .set_caption(db.get_season() + " Manager Z-Scores") \
            .format(precision = 2) \
            .background_gradient(axis = None, vmin = MIN_Z_SCORE, vmax = MAX_Z_SCORE, cmap = COLOR_MAP) \
            .text_gradient(axis = None, vmin = -1, vmax = -1, cmap = "hot"))
@@ -80,11 +82,12 @@ def display_manager_gw_scores(db):
     data_to_display = database_formatter.format_manager_gw_scores(db)
     if(DEBUG): print(data_to_display)
         
+    print(db.get_season() + ' Manager Scores')
+        
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
     df = df.T
     
     display(df.style \
-           .set_caption(db.get_season() + " Manager Scores") \
            .format(precision = 2) \
            .background_gradient(axis = None, vmin = MIN_GW_SCORE, vmax = MAX_GW_SCORE, cmap = COLOR_MAP) \
            .text_gradient(axis = None, vmin = -1, vmax = -1, cmap = "hot"))
@@ -93,11 +96,12 @@ def display_opponent_z_scores(db):
     data_to_display = database_formatter.format_opponent_z_scores(db)
     if(DEBUG): print(data_to_display)
         
+    print(db.get_season() + ' Opponent Z-Scores')
+        
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
     df = df.T
 
     display(df.style \
-           .set_caption(db.get_season() + " Opponent Z-Scores") \
            .format(precision = 2) \
            .background_gradient(axis = None, vmin = MIN_Z_SCORE, vmax = MAX_Z_SCORE, cmap = plt.cm.get_cmap(COLOR_MAP).reversed()) \
            .text_gradient(axis = None, vmin = -1, vmax = -1, cmap = "hot"))
@@ -105,12 +109,12 @@ def display_opponent_z_scores(db):
 def display_opponent_gw_scores(db):
     data_to_display = database_formatter.format_opponent_gw_scores(db)
     if(DEBUG): print(data_to_display)
+    print(db.get_season() + ' Opponent Scores')
         
     df = pd.DataFrame(data = data_to_display, index = ["Average", "Median"])
     df = df.T
     
     display(df.style \
-           .set_caption(db.get_season() + " Opponent Scores") \
            .format(precision = 2) \
            .background_gradient(axis = None, vmin = MIN_GW_SCORE, vmax = MAX_GW_SCORE, cmap = plt.cm.get_cmap(COLOR_MAP).reversed()) \
            .text_gradient(axis = None, vmin = -1, vmax = -1, cmap = "hot"))
