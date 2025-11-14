@@ -5,9 +5,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 sys.path.append(os.path.join(os.getcwd(), '..\\python\\data'))
 sys.path.append(os.path.join(os.getcwd(), '..\\python\\data\\common'))
+sys.path.append(os.path.join(os.getcwd(), '..\\python\\database'))
 
 # Import libraries
 import matplotlib.pyplot
+import database_formatter
 
 def plot_manager_performances(database):
     number_of_gws = database.get_number_of_gws()
@@ -55,46 +57,9 @@ def plot_gw_performances(database):
     matplotlib.pyplot.show()
 
 def plot_race_to_the_bottom(db):
-    number_of_gws = db.get_number_of_gws()
-    managers = db.get_managers()
-
-    manager_rank_scores = dict()
-    manager_ranks_over_time = dict()
-
-    for name in managers:
-        manager_ranks_over_time[name] = list()
-        manager_rank_scores[name] = list()
-        manager_scores = db.get_manager_gw_scores(name)
-
-        for gw in range(number_of_gws):
-            if(gw == 0):
-                rank_score = 0
-            else:
-                rank_score = manager_rank_scores[name][gw - 1]
-            manager_score = db.get_gw_score(name, gw)
-            opponent_score = db.get_opponent_score(name, gw)
-
-            # Calculate the result score
-            result_score = 30000 if manager_score > opponent_score else 10000 if manager_score == opponent_score else 0
-            rank_score += result_score + manager_score
-            manager_rank_scores[name].append(rank_score)
-
-    for gw in range(number_of_gws):
-        manager_rank_scores_for_gw = dict()
-
-        for name in managers:
-            manager_rank_scores_for_gw[name] = manager_rank_scores[name][gw]
-
-        manager_ranks_for_gw = sorted(manager_rank_scores_for_gw.items(), key=lambda item: item[1])
-        manager_ranks = list()
-        for sorted_managers in manager_ranks_for_gw:
-            name = sorted_managers[0]
-            manager_ranks.append(name)
-
-        for name in managers:
-            manager_ranks_over_time[name].append(manager_ranks.index(name))
-
-    df = pd.DataFrame(data=manager_ranks_over_time)
+    df = pd.DataFrame(data=database_formatter.format_race_to_the_bottom(db))
     df.head()    
-    df.plot(title = db.get_season() + ' Race to the Bottom')
+    ax = df.plot(title = db.get_season() + ' Race to the Bottom')
+    ax.invert_yaxis()
     plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+    plt.yticks(range(1, len(db.get_managers()) + 1))

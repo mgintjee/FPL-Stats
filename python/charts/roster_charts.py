@@ -8,8 +8,18 @@ sys.path.append(os.path.join(os.getcwd(), '..\\python\\data\\players'))
 # Import libraries
 import matplotlib.pyplot
 from prettytable import PrettyTable 
+import pandas as pd
 import chart_utils
 import player_constants
+
+#Constants
+MANAGER_KEY = "Manager"
+PICKUP_PLAYER_IMPACT_KEY = "Most Impactful Player (Pick-up)"
+DRAFT_PLAYER_IMPACT_KEY = "Most Impactful Player (Drafted)"
+CONTRIBUTION_KEY = "% Contribution"
+TOTAL_POINTS_KEY = "Total Points"
+TOTAL_MINUTES_KEY = "Total Minutes"
+POINTS_PER_90_KEY = "Points Per 90"
 
 def get_team_from(team):
     if "/" in team:
@@ -111,7 +121,26 @@ def chart_roster_contributions_for_players(database, wasDrafted):
         row_data.extend(get_roster_contributions_for_players(manager, database, wasDrafted))
         pretty_table.add_row(row_data)
     
-    print(pretty_table)
+    
+    pandas_headers = {
+        #MANAGER_KEY: list(),
+        DRAFT_PLAYER_IMPACT_KEY if wasDrafted else PICKUP_PLAYER_IMPACT_KEY: list(),
+        CONTRIBUTION_KEY: list(),
+        TOTAL_POINTS_KEY: list(),
+        TOTAL_MINUTES_KEY: list(),
+        POINTS_PER_90_KEY: list()
+    }
+    
+    for manager in database.get_managers():
+        data = get_roster_contributions_for_players(manager, database, wasDrafted)
+        #pandas_headers[MANAGER_KEY].append(manager)
+        pandas_headers[DRAFT_PLAYER_IMPACT_KEY if wasDrafted else PICKUP_PLAYER_IMPACT_KEY].append(data[0])
+        pandas_headers[CONTRIBUTION_KEY].append(data[1])
+        pandas_headers[TOTAL_POINTS_KEY].append(data[2])
+        pandas_headers[TOTAL_MINUTES_KEY].append(data[3])
+        pandas_headers[POINTS_PER_90_KEY].append(data[4])
+    df = pd.DataFrame(pandas_headers, index = database.get_managers())
+    print(df)
     
 def chart_roster_contributions_for_top_teams(database):    
     headers = ["Manager", "Most Impactful Team", "% Contribution", "Total Points", "Total Minutes", "Points per 90"]

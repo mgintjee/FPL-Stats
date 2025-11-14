@@ -114,6 +114,26 @@ class database:
     def get_z_score(self, manager, gw):
         return database_utils.get_z_score(self, manager, gw)
     
+    def get_winning_gw_scores(self, manager):
+        return self.get_gw_scores_based_off_result(self, manager, True)
+        
+    def get_losing_gw_scores(self, manager):
+        return self.get_gw_scores_based_off_result(self, manager, False)
+    
+    def get_gw_scores_based_off_result(self, manager, won):
+        results = list()
+        
+        for gw in range(0, self.get_number_of_gws()):
+            manager_score = self.get_gw_score(manager, gw)
+            opponent_score = self.get_opponent_score(manager, gw)
+            won_gw = manager_score > opponent_score
+            if(won and won_gw):
+                results.append(manager_score)
+            elif(not won and not won_gw):
+                results.append(manager_score)
+        
+        return results
+        
     def get_player_id_map(self):
         player_id_data_map = dict()
         for manager in self.get_managers():
@@ -128,7 +148,3 @@ class database:
     def was_player_id_drafted(self, manager, player_id):
         manager_index = self.get_managers().index(manager)
         return player_id in self.get_draft_results()[manager_index]
-    
-    def get_manager_ranks_for_gw(database, gw):
-        
-        return list()
