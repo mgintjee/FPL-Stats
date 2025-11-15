@@ -15,8 +15,8 @@ def format_manager_gw_scores(db):
         manager_gw_scores = db.get_manager_gw_scores(name)
         
         managers_z_scores[name] = list()
-        managers_z_scores[name].append(statistics.mean(manager_gw_scores))
-        managers_z_scores[name].append(statistics.median(manager_gw_scores))
+        managers_z_scores[name].append(round(statistics.mean(manager_gw_scores), 2))
+        managers_z_scores[name].append(round(statistics.median(manager_gw_scores), 2))
     
     return managers_z_scores
 
@@ -27,8 +27,8 @@ def format_manager_z_scores(db):
         manager_z_scores = db.get_manager_z_scores(name)
         
         managers_z_scores[name] = list()
-        managers_z_scores[name].append(statistics.mean(manager_z_scores))
-        managers_z_scores[name].append(statistics.median(manager_z_scores))
+        managers_z_scores[name].append(round(statistics.mean(manager_z_scores), 2))
+        managers_z_scores[name].append(round(statistics.median(manager_z_scores), 2))
     
     return managers_z_scores
 
@@ -39,8 +39,8 @@ def format_opponent_gw_scores(db):
         opponent_gw_scores = db.get_opponent_gw_scores(name)
         
         managers_z_scores[name] = list()
-        managers_z_scores[name].append(statistics.mean(opponent_gw_scores))
-        managers_z_scores[name].append(statistics.median(opponent_gw_scores))
+        managers_z_scores[name].append(round(statistics.mean(opponent_gw_scores), 2))
+        managers_z_scores[name].append(round(statistics.median(opponent_gw_scores), 2))
     
     return managers_z_scores
 
@@ -51,8 +51,8 @@ def format_opponent_z_scores(db):
         opponent_z_scores = db.get_opponent_z_scores(name)
         
         managers_z_scores[name] = list()
-        managers_z_scores[name].append(statistics.mean(opponent_z_scores))
-        managers_z_scores[name].append(statistics.median(opponent_z_scores))
+        managers_z_scores[name].append(round(statistics.mean(opponent_z_scores), 2))
+        managers_z_scores[name].append(round(statistics.median(opponent_z_scores), 2))
     
     return managers_z_scores
 

@@ -1,0 +1,11 @@
+#HEADER:Against morfin,Against sean,Against ben,Against matt,Against aj,Against katabe,Against rafa,Against zac,Against vu,Against tj
+morfin,None,0,0,1,0,1,1,1,1,0
+sean,1,None,0,0,1,1,0,1,0,0
+ben,1,1,None,0,0,0,1,0,0,1
+matt,0,1,1,None,1,1,1,1,1,1
+aj,1,0,1,0,None,0,0,1,1,0
+katabe,0,0,1,0,1,None,1,1,1,1
+rafa,0,1,0,0,0,0,None,1,0,0
+zac,0,0,1,0,0,0,0,None,0,0
+vu,0,1,1,0,0,0,1,1,None,1
+tj,1,1,0,0,1,0,1,1,0,None

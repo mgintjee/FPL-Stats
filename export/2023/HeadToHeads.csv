@@ -1,0 +1,11 @@
+#HEADER:Against zach,Against mg,Against aj,Against md,Against sean,Against rafa,Against ben,Against katabe,Against vu,Against tj
+zach,None,1,3,2,2,2,3,2,1,2
+mg,3,None,3,1,3,1,2,4,3,1
+aj,1,1,None,2,2,3,3,1,3,1
+md,2,3,2,None,1,1,2,1,0,3
+sean,2,1,1,3,None,1,1,3,2,3
+rafa,2,3,1,3,3,None,3,3,1,1
+ben,1,2,1,2,3,1,None,1,1,0
+katabe,2,0,3,3,1,1,3,None,1,1
+vu,3,1,1,4,2,3,3,3,None,2
+tj,2,3,3,1,1,3,4,3,2,None
